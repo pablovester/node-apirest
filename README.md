@@ -27,14 +27,14 @@ El tiempo asignado al academy es de 2 semanas (10 días hábiles)
 Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro lado complemetaremos algunos temas con material de lectura.
 
 ## ROAD MAP
-| Fecha      | Descripción |
+| Date      | Description |
 | --------- | -----|
 | 08/05  | <b>Kick off / Comunication / repositories</b> |
 | 09/05  | Setting the environment / start with REST & Express |
 | 10/05  | <b>Cheeckpoint (Base/REST/Express)</b> |
 | <s>11/05</s>  | <s>Weekend</s> |
 | <s>12/05</s>  | <s>Weekend</s> |
-| 13/05  | <b>Cheeckpoint / start with Asinc</b> |
+| 13/05  | <b>Cheeckpoint / start with Asinc / start with the project</b> |
 | 14/05  | Start with Sequelize |
 | 15/05  | <b>Cheeckpoint (asinc/sequelize)</b> |
 | 16/05  | Start with JWT/TEST |
@@ -42,6 +42,6 @@ Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro
 | <s>18/05</s>  | <s>Weekend</s> |
 | <s>19/05</s>  | <s>Weekend</s> |
 | 20/05  | <b>Cheeckpoint</b> |
-| 21/05  | Code |
+| 21/05  | Plus (Docker) |
 | 22/05  | <b>Final cheeckpoint</b> |
 | 23/05  | Review |
