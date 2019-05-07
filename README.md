@@ -17,13 +17,11 @@ Aprender los conceptos básico para poder desarrollar APIs RESTFul en Nodejs
 ## Precondiciones
 Tener conocimientos básico de javascript, GIT, OOP.
 
-## Modalidad
-Virtual con cheeckpoints día por medio para hacer un seguimiento del progreso. Los cheeckpoint serán grupales por hangout y se enviarán los invites por el mail de globant.
-
 ## Duración
 El tiempo asignado al academy es de 2 semanas (10 días hábiles)
 
-## Material
+## Modalidad
+Virtual con cheeckpoints día por medio para hacer un seguimiento del progreso. Los cheeckpoint serán grupales por hangout y se enviarán los invites por el mail de globant.
 Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro lado complemetaremos algunos temas con material de lectura.
 
 ## ROAD MAP
