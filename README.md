@@ -53,6 +53,11 @@ Todo los conceptos aprendidos deberán ser aplicados a un ejercicio final el cua
 ## Let's do it
 Here goes all the material and excersises, enjoy it. :)
 
+#### Reading:
+ - [What is Node.js](https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5)
+ - [Node versions](https://nodesource.com/blog/understanding-how-node-js-release-lines-work/)
+ - [REPL](https://hackernoon.com/know-node-repl-better-dbd15bca0af6)
+ 
 ### Getting Started
 [SECTION 1 | Getting Started](https://globant.udemy.com/nodejs-master-class/)
   - Welcome
