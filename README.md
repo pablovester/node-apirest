@@ -54,7 +54,7 @@ Todo los conceptos aprendidos deberán ser aplicados a un ejercicio final el cua
 Here goes all the material and excersises, enjoy it. :)
 
 ### Getting Started
-[SECTION 1 | Getting Started](https://www.udemy.com/nodejs-master-class)
+[SECTION 1 | Getting Started](https://globant.udemy.com/nodejs-master-class/)
   - Welcome
   - What is Node
   - Node Architecture
@@ -63,7 +63,7 @@ Here goes all the material and excersises, enjoy it. :)
   - Your First Node Program
   - Course Structure
   
-[SECTION 2 | Node Module System](https://www.udemy.com/nodejs-master-class)
+[SECTION 2 | Node Module System](https://globant.udemy.com/nodejs-master-class/)
   - Introduction
   - Global Object
   - Modules
@@ -78,7 +78,7 @@ Here goes all the material and excersises, enjoy it. :)
   - Extending Event Emitter
   - HTTP Module
   
-[SECTION 3 | Node Package Manager](https://www.udemy.com/nodejs-master-class)
+[SECTION 3 | Node Package Manager](https://globant.udemy.com/nodejs-master-class/)
   - Introduction
   - Package.json
   - Installing a Node Package
@@ -105,7 +105,7 @@ Here goes all the material and excersises, enjoy it. :)
   - [Module System](https://medium.freecodecamp.org/anatomy-of-js-module-systems-and-building-libraries-fadcd8dbd0e)
  
 ### Building RESTful API's Using Express
-[SECTION 4 | Building RESTful API's Using Express](https://www.udemy.com/nodejs-master-class)
+[SECTION 4 | Building RESTful API's Using Express](https://globant.udemy.com/nodejs-master-class/)
   - Introduction
   - RESTful Services
   - Introducing Express
@@ -120,7 +120,7 @@ Here goes all the material and excersises, enjoy it. :)
   - Handling HTTP PUT Requests
   - Handling HTTP Delete Requests
 
-[SECTION 5 | Express- Advanced Topics](https://www.udemy.com/nodejs-master-class)
+[SECTION 5 | Express- Advanced Topics](https://globant.udemy.com/nodejs-master-class/)
   - Introducion
   - Middleware
   - Creating Custom Middleware
@@ -135,24 +135,12 @@ Here goes all the material and excersises, enjoy it. :)
   - Structuring Express Applications
   - Project- Restructure the App
 
-[PLUS | Advance RESTful API's](https://www.udemy.com/beautiful-apis)
-  - Best Practices
-    - Nouns Over Verbs
-    - REST Formats
-    - Versioning
-    - Error Handling
-  - Advanced Topics
-    - Query Parameters & Search
-    - Pagination & Partials
-    - Authentication
-
 #### ~~Not so~~ optional reading
   - [The definitive guide to Express](https://hackernoon.com/the-definitive-guide-to-express-the-node-js-web-application-framework-649352e2ae87)
   - [Validations](https://medium.freecodecamp.org/how-to-make-input-validation-simple-and-clean-in-your-express-js-app-ea9b5ff5a8a7)
   - [Validations with JOI](https://scotch.io/tutorials/node-api-schema-validation-with-joi)
 
 ### Asynchronous JavaScript
-[Call Stack, Callback Queue, and Event Loop -> Asynchronous Node.js](https://www.udemy.com/the-complete-nodejs-developer-course-2)
 
 [SECTION 6 | Asynchronous JavaScript](https://www.udemy.com/nodejs-master-class)
   - Synchronous Vs. Asynchronous Code
@@ -178,7 +166,7 @@ Here goes all the material and excersises, enjoy it. :)
 @Nico... link aquí
 
 ### JWT / TEST
-[SECTION 10 | Authentication and Authorization](https://www.udemy.com/nodejs-master-class)
+[SECTION 10 | Authentication and Authorization](https://globant.udemy.com/nodejs-master-class/)
   - Introduction
   - Creating the User Model
   - Registering Users
@@ -198,7 +186,7 @@ Here goes all the material and excersises, enjoy it. :)
   - Role Based Authorization
   - Testing the Authorization
 
-[SECTION 11 | Handling and Logging Errors](https://www.udemy.com/nodejs-master-class)
+[SECTION 11 | Handling and Logging Errors](https://globant.udemy.com/nodejs-master-class/)
   - Introduction
   - Handling Rejected Promises
   - Express Error Middleware
@@ -214,7 +202,7 @@ Here goes all the material and excersises, enjoy it. :)
   - Extracting the Validation Logic
   - Showing Unhandled Exceptions on the Console
   
-[SECTION 12 | Unit Testing](https://www.udemy.com/nodejs-master-class)
+[SECTION 12 | Unit Testing](https://globant.udemy.com/nodejs-master-class/)
   - What is Automated Testing?
   - Benefits of Automated Testing
   - Types of Tests
@@ -242,10 +230,11 @@ Here goes all the material and excersises, enjoy it. :)
   - [Sinon vs Rewire](https://joost.vunderink.net/blog/2016/03/27/sinon-vs-rewire-when-do-i-use-which/)
   - [Code Coverage](https://medium.com/walkme-engineering/measure-your-nodejs-code-coverage-using-istanbul-82b129c81ae9)
   
-### DOCKER
+### PLUS 
 This section is a plus. We hope you have time to do it. :)
 
-[PLUS | Docker Mastery for Node.js Projects From a Docker Captain](https://www.udemy.com/docker-mastery-for-nodejs/)
+[DOCKER | Docker Mastery for Node.js Projects From a Docker Captain](https://globant.udemy.com/docker-mastery-for-nodejs/)
+[ADVANCE NODEJS | Node JS: Advanced Concepts](https://globant.udemy.com/advanced-node-for-developers)
 
 #### ~~Not so~~ optional reading
   - [Bluebird vs ES6 Promises](https://medium.com/@housecor/5-reasons-to-keep-using-bluebird-for-promises-a4f59c8a5d69)
