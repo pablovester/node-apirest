@@ -95,7 +95,15 @@ Here goes all the material and excersises, enjoy it. :)
   - Working with Global Packages
   - Publishing a Package
   - Updating a Published Package
-  
+
+#### ~~Not so~~ optional reading
+  - [NPM](https://docs.npmjs.com/about-npm)
+  - [NVM](https://github.com/creationix/nvm)
+  - [Modules](https://www.nodebeginner.org/blog/post/nodejs-tutorial-what-are-node.js-modules/)
+  - [Debugging](https://www.nodebeginner.org/blog/post/nodejs-tutorial-what-are-node.js-modules/)
+  - [Debugging on VS-Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+  - [Module System](https://medium.freecodecamp.org/anatomy-of-js-module-systems-and-building-libraries-fadcd8dbd0e)
+ 
 ### Building RESTful API's Using Express
 [SECTION 4 | Building RESTful API's Using Express](https://www.udemy.com/nodejs-master-class)
   - Introduction
@@ -137,7 +145,12 @@ Here goes all the material and excersises, enjoy it. :)
     - Query Parameters & Search
     - Pagination & Partials
     - Authentication
-    
+
+#### ~~Not so~~ optional reading
+  - [The definitive guide to Express](https://hackernoon.com/the-definitive-guide-to-express-the-node-js-web-application-framework-649352e2ae87)
+  - [Validations](https://medium.freecodecamp.org/how-to-make-input-validation-simple-and-clean-in-your-express-js-app-ea9b5ff5a8a7)
+  - [Validations with JOI](https://scotch.io/tutorials/node-api-schema-validation-with-joi)
+
 ### Asynchronous JavaScript
 [Call Stack, Callback Queue, and Event Loop -> Asynchronous Node.js](https://www.udemy.com/the-complete-nodejs-developer-course-2)
 
@@ -154,6 +167,13 @@ Here goes all the material and excersises, enjoy it. :)
   - Running Parallel Promises
   - Async and Await
   
+  #### ~~Not so~~ optional reading
+  - [Scope & Closures](https://hackernoon.com/javascript-variable-scope-closures-a-primer-ace00b362eae)
+  - [Event Driven Architecture](https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d)
+  - [Callbacks](https://medium.freecodecamp.org/javascript-callbacks-explained-using-minions-da272f4d9bcd)
+  - [Promises](https://hackernoon.com/understanding-promises-in-javascript-13d99df067c1)
+  - [Async/Await](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
+ 
 ### Sequelize
 @Nico... link aquí
 
@@ -214,9 +234,28 @@ Here goes all the material and excersises, enjoy it. :)
   - Interaction Testing
   - Jest Mock Functions
   - What to Unit Test
+
+#### ~~Not so~~ optional reading
+  - [Testing in Node](https://hackernoon.com/a-crash-course-on-testing-with-node-js-6c7428d3da02)
+  - [Mocks vs Stubs vs Shims](https://hackernoon.com/mocks-stubs-or-shims-f22164422020)
+  - [How to mock in Node](https://itnext.io/how-to-mock-dependency-in-a-node-js-and-why-2ad4386f6587)
+  - [Sinon vs Rewire](https://joost.vunderink.net/blog/2016/03/27/sinon-vs-rewire-when-do-i-use-which/)
+  - [Code Coverage](https://medium.com/walkme-engineering/measure-your-nodejs-code-coverage-using-istanbul-82b129c81ae9)
   
 ### DOCKER
 This section is a plus. We hope you have time to do it. :)
 
 [PLUS | Docker Mastery for Node.js Projects From a Docker Captain](https://www.udemy.com/docker-mastery-for-nodejs/)
 
+#### ~~Not so~~ optional reading
+  - [Bluebird vs ES6 Promises](https://medium.com/@housecor/5-reasons-to-keep-using-bluebird-for-promises-a4f59c8a5d69)
+  - [Node uses a single thread?](https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea)
+  - [Clustering](https://medium.com/tech-tajawal/clustering-in-nodejs-utilizing-multiple-processor-cores-75d78aeb0f4f)
+  - [Threads](https://medium.com/tech-tajawal/threading-in-nodejs-5d966a3b9858)
+  - [Socket IO](https://socket.io/)
+  - [No SQL Databases](https://www.mongodb.com/nosql-explained)
+  - [Caching](https://medium.com/@danielsternlicht/caching-like-a-boss-in-nodejs-9bccbbc71b9b)
+
+Hey, If you need a place to kill time try [Medium](https://medium.com), there's a lot to read about pretty much anything (specially development related topics).
+
+  
