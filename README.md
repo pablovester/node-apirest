@@ -210,6 +210,7 @@ Here goes all the material and excersises, enjoy it. :)
   - What to Unit Test
   
 ### DOCKER
-This secction it's a plus. We hope that you have time to can make this section.:)
+This section is a plus. We hope you have time to do it. :)
+
 [PLUS | Docker Mastery for Node.js Projects From a Docker Captain](https://www.udemy.com/docker-mastery-for-nodejs/)
 
