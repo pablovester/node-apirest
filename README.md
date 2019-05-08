@@ -5,8 +5,8 @@
 # Important
 - Coordinador
   - Luca Sartori -> luca.sartori@globant.com
-- Slack channel
-  - falta crearlo
+- Slack channel (https://globant.slack.com)
+  - #academy_nodejs_2019
 - Tutores
   - Marquez German -> german.marquez@globant.com
   - Nicolás Herrera -> nicolas.herrera@globant.com
