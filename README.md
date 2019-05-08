@@ -21,26 +21,32 @@ Tener conocimientos básico de javascript, GIT, OOP.
 El tiempo asignado al academy es de 2 semanas (10 días hábiles)
 
 ## Modality
-Virtual con cheeckpoints día por medio para hacer un seguimiento del progreso. Los cheeckpoint serán grupales por hangout y se enviarán los invites por el mail de globant.
-Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro lado complemetaremos algunos temas con material de lectura.
+Utilizaremos una modalidad virtual donde vamos a hacer meetings día por medio para hacer un seguimiento del progreso, evacuar dudas y reforzar los temas necesarios.
+Las meetings (_cheeckpoint_) serán grupales por hangout para las cuales se enviarán invites por mail.
+
+Tambien usaremos un channel de slack donde se podrán hacer consultas y/o sugerencias.
+
+El material que usaremos será en gran parte cursos de udemy que seleccionamos. Por otro lado complemetaremos algunos temas con material de lectura.
+
+Todo los conceptos aprendidos deberán ser aplicados a un ejercicio final el cual vamos a usar para evaluarlos.
 
 ## Roadmap
 | Date      | Description |
 | --------- | -----|
-| 08/05  | <b>Kick off / Comunication / repositories</b> |
-| 09/05  | Setting the environment / start with REST & Express |
-| 10/05  | <b>Cheeckpoint (Base/REST/Express)</b> |
+| 08/05  | <b>Kick off / Setting accounts / <i>Getting Started</i></b> |
+| 09/05  | Setting the environment / <i>Building RESTful API's Using Express</i> |
+| 10/05  | <b>Cheeckpoint</b> |
 | <s>11/05</s>  | <s>Weekend</s> |
 | <s>12/05</s>  | <s>Weekend</s> |
-| 13/05  | <b>Cheeckpoint / start with Asinc / start with the project</b> |
-| 14/05  | Start with Sequelize |
-| 15/05  | <b>Cheeckpoint (asinc/sequelize)</b> |
-| 16/05  | Start with JWT/TEST |
-| 17/05  | <b>Cheeckpoint (jwt/test)</b> |
+| 13/05  | <b>Cheeckpoint / <i>Asynchronous JavaScript</i></b> |
+| 14/05  | <i>Sequelize</i> |
+| 15/05  | <b>Cheeckpoint</b> |
+| 16/05  | <i>JWT / TEST</i> |
+| 17/05  | <b>Cheeckpoint</b> |
 | <s>18/05</s>  | <s>Weekend</s> |
 | <s>19/05</s>  | <s>Weekend</s> |
 | 20/05  | <b>Cheeckpoint</b> |
-| 21/05  | Plus (Docker) |
+| 21/05  | <i>Plus (Docker)</i> |
 | 22/05  | <b>Final cheeckpoint</b> |
 | 23/05  | Review |
 
