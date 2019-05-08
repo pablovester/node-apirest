@@ -2,7 +2,7 @@
 
 ![Globant](assets/globant.jpg)
 
-# Importante
+# Important
 - Coordinador
   - Luca Sartori -> luca.sartori@globant.com
 - Slack channel
@@ -11,20 +11,20 @@
   - Marquez German -> german.marquez@globant.com
   - Nicolás Herrera -> nicolas.herrera@globant.com
 
-## Objectivo
+## Objective
 Aprender los conceptos básico para poder desarrollar APIs RESTFul en Nodejs
 
-## Precondiciones
+## Preconditions
 Tener conocimientos básico de javascript, GIT, OOP.
 
-## Duración
+## Duration
 El tiempo asignado al academy es de 2 semanas (10 días hábiles)
 
-## Modalidad
+## Modality
 Virtual con cheeckpoints día por medio para hacer un seguimiento del progreso. Los cheeckpoint serán grupales por hangout y se enviarán los invites por el mail de globant.
 Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro lado complemetaremos algunos temas con material de lectura.
 
-## ROAD MAP
+## Roadmap
 | Date      | Description |
 | --------- | -----|
 | 08/05  | <b>Kick off / Comunication / repositories</b> |
@@ -45,6 +45,7 @@ Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro
 | 23/05  | Review |
 
 ## Let's do it
+Here goes all the material and excersises, enjoy it. :)
 
 ### Getting Started
 [SECTION 1 | Getting Started](https://www.udemy.com/nodejs-master-class)
@@ -170,7 +171,7 @@ Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro
   - Logging Out Users
   - Role Based Authorization
   - Testing the Authorization
-### TEST
+
 [SECTION 11 | Handling and Logging Errors](https://www.udemy.com/nodejs-master-class)
   - Introduction
   - Handling Rejected Promises
@@ -209,5 +210,6 @@ Usaremos cursos de udemy para gran parte de los contenidos del academy. Por otro
   - What to Unit Test
   
 ### DOCKER
+This secction it's a plus. We hope that you have time to can make this section.:)
 [PLUS | Docker Mastery for Node.js Projects From a Docker Captain](https://www.udemy.com/docker-mastery-for-nodejs/)
 
