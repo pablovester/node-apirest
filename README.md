@@ -30,6 +30,9 @@ El material que usaremos será en gran parte cursos de udemy que seleccionamos. 
 
 Todo los conceptos aprendidos deberán ser aplicados a un ejercicio final el cual vamos a usar para evaluarlos.
 
+## Final exercise
+Let's not waste time.... start [here](./Exercise.md)
+
 ## Roadmap
 | Date      | Description |
 | --------- | -----|
@@ -168,7 +171,7 @@ Here goes all the material and excersises, enjoy it. :)
   - [Async/Await](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
  
 ### Sequelize
-@Nico... link aquí
+Here we go .... [click me](./sequelize)
 
 ### JWT / TEST
 [SECTION 10 | Authentication and Authorization](https://globant.udemy.com/nodejs-master-class/)
