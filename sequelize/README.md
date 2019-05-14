@@ -105,13 +105,15 @@ See [Query Types](http://docs.sequelizejs.com/variable/index.html#static-variabl
 
 Here is how it works:
 
+#### Migrations
+
 - [Migrations](http://docs.sequelizejs.com/manual/migrations.html)
 
 #### Model definition
 
 - [Model definition](http://docs.sequelizejs.com/manual/tutorial/models-definition.html)
 
-To define mappings between a model and a table, use the ** define method.
+To define mappings between a model and a table, use the ```define``` method. Each column must have a datatype
 
 ```
 const Project = sequelize.define('project', {
@@ -137,6 +139,7 @@ Sequelize.STRING(1234)                // VARCHAR(1234)
 Sequelize.STRING.BINARY               // VARCHAR BINARY
 Sequelize.TEXT                        // TEXT
 Sequelize.TEXT('tiny')                // TINYTEXT
+Sequelize.CITEXT                      // CITEXT      PostgreSQL and SQLite only.
 
 Sequelize.INTEGER                     // INTEGER
 Sequelize.BIGINT                      // BIGINT
@@ -144,7 +147,7 @@ Sequelize.BIGINT(11)                  // BIGINT(11)
 
 Sequelize.FLOAT                       // FLOAT
 Sequelize.FLOAT(11)                   // FLOAT(11)
-Sequelize.FLOAT(11, 12)               // FLOAT(11,12)
+Sequelize.FLOAT(11, 10)               // FLOAT(11,10)
 
 Sequelize.REAL                        // REAL        PostgreSQL only.
 Sequelize.REAL(11)                    // REAL(11)    PostgreSQL only.
@@ -152,7 +155,7 @@ Sequelize.REAL(11, 12)                // REAL(11,12) PostgreSQL only.
 
 Sequelize.DOUBLE                      // DOUBLE
 Sequelize.DOUBLE(11)                  // DOUBLE(11)
-Sequelize.DOUBLE(11, 12)              // DOUBLE(11,12)
+Sequelize.DOUBLE(11, 10)              // DOUBLE(11,10)
 
 Sequelize.DECIMAL                     // DECIMAL
 Sequelize.DECIMAL(10, 2)              // DECIMAL(10,2)
@@ -202,6 +205,20 @@ Sequelize.INTEGER(11).ZEROFILL.UNSIGNED // INTEGER(11) UNSIGNED ZEROFILL
 Sequelize.INTEGER(11).UNSIGNED.ZEROFILL // INTEGER(11) UNSIGNED ZEROFILL
 
 ```
+
+Usage in object notation:
+
+```
+// for enums:
+class MyModel extends Model {}
+MyModel.init({
+  states: {
+    type: Sequelize.ENUM,
+    values: ['active', 'pending', 'deleted']
+  }
+}, { sequelize })
+```
+
 
 ##### Database synchronization
 
@@ -267,13 +284,27 @@ Finder methods are intended to query data from the database. They do not return 
 
 In this document we'll explore what finder methods can do:
 
-###### find - Search for one specific element in the database
+##### find - Search for one specific element in the database
 
 ```
 // search for known ids
-Project.findById(123).then(project => {
+Project.findByPk(123).then(project => {
   // project will be an instance of Project and stores the content of the table entry
   // with id 123. if such an entry is not defined you will get null
+})
+
+// search for attributes
+Project.findOne({ where: {title: 'aProject'} }).then(project => {
+  // project will be the first entry of the Projects table with the title 'aProject' || null
+})
+
+
+Project.findOne({
+  where: {title: 'aProject'},
+  attributes: ['id', ['name', 'title']]
+}).then(project => {
+  // project will be the first entry of the Projects table with the title 'aProject' || null
+  // project.get('title') will contain the name of the project
 })
 ```
 
@@ -281,17 +312,37 @@ Project.findById(123).then(project => {
 
 The method findOrCreate can be used to check if a certain element already exists in the database. If that is the case the method will result in a respective instance. If the element does not yet exist, it will be created.
 
+```
+public static findOrCreate(options: Object): Promise<Model, boolean>
+```
+
 ##### findAndCountAll - Search for multiple elements in the database, returns both data and total count
-This is a convenience method that combinesfindAll and count (see below) this is useful when dealing with queries related to pagination where you want to retrieve data with a limit and offset but also need to know the total number of records that match the query:
+
+This is a convenience method that combines ```findAll``` and ```count``` (see below) this is useful when dealing with queries related to pagination where you want to retrieve data with a limit and offset but also need to know the total number of records that match the query:
 
 The success handler will always receive an object with two properties:
 
-count - an integer, total number records matching the where clause and other filters due to associations
-rows - an array of objects, the records matching the where clause and other filters due to associations, within the limit and offset range
+```count``` - an integer, total number records matching the where clause and other filters due to associations
+```rows``` - an array of objects, the records matching the where clause and other filters due to associations, within the limit and offset range
+
+```
+public static findAndCountAll(options: Object): Promise<{count: number, rows: Model[]}>
+
+Model.findAndCountAll({
+  where: ...,
+  limit: 12,
+  offset: 12
+}).then(result => {
+  ...
+})
+```
 
 ##### findAll - Búsqueda de múltiples elementos en la base de datos.
 
 ```
+
+public static findAll(options: Object): Promise<Array<Model>>
+
 // find multiple entries
 Project.findAll().then(projects => {
   // projects will be an array of all Project instances
@@ -301,6 +352,36 @@ Project.findAll().then(projects => {
 Project.all().then(projects => {
   // projects will be an array of all Project instances
 })
+
+Simple search using AND and =
+
+Model.findAll({
+  where: {
+    attr1: 42,
+    attr2: 'cake'
+  }
+})
+
+const {gt, lte, ne, in: opIn} = Sequelize.Op;
+
+Model.findAll({
+  where: {
+    attr1: {
+      [gt]: 50
+    },
+    attr2: {
+      [lte]: 45
+    },
+    attr3: {
+      [opIn]: [1,2,3]
+    },
+    attr4: {
+      [ne]: 5
+    }
+  }
+})
+
+# WHERE attr1 > 50 AND attr2 <= 45 AND attr3 IN (1,2,3) AND attr4 != 5
 ```
 
 ##### Manipulating the dataset with limit, offset, order and group
@@ -315,9 +396,10 @@ Project.findAll({ offset: 10 })
 
 // step over the first 10 elements, and take 2
 Project.findAll({ offset: 10, limit: 2 })
+
 The syntax for grouping and ordering are equal, so below it is only explained with a single example for group, and the rest for order. Everything you see below can also be done for group
 
-Project.findAll({order: 'title DESC'})
+Project.findAll({order: [['title', 'DESC']]})
 // yields ORDER BY title DESC
 
 Project.findAll({group: 'name'})
@@ -375,7 +457,7 @@ Project.count().then(c => {
 ```
 
 ##### max - Get the greatest value of a specific attribute within a specific table
-And here is a method for getting the max value of an attribute:f
+And here is a method for getting the max value of an attribute:
 
 ```
 /*
@@ -406,7 +488,7 @@ Project.min('age').then(min => {
 
 ##### sum - Sum the value of specific attributes
 
-In order to calculate the sum over a specific column of a table, you can use the sum method.
+In order to calculate the sum over a specific column of a table, you can use the ```sum``` method.
 
 ```
 /*
@@ -417,6 +499,51 @@ In order to calculate the sum over a specific column of a table, you can use the
 */
 Project.sum('age').then(sum => {
   // this will return 55
+})
+```
+
+#### Eager loading
+
+When you are retrieving data from the database there is a fair chance that you also want to get associations with the same query - this is called eager loading. The basic idea behind that, is the use of the attribute include when you are calling find or findAll. Lets assume the following setup:
+
+```
+class User extends Model {}
+User.init({ name: Sequelize.STRING }, { sequelize, modelName: 'user' })
+class Task extends Model {}
+Task.init({ name: Sequelize.STRING }, { sequelize, modelName: 'task' })
+class Tool extends Model {}
+Tool.init({ name: Sequelize.STRING }, { sequelize, modelName: 'tool' })
+
+Task.belongsTo(User)
+User.hasMany(Task)
+User.hasMany(Tool, { as: 'Instruments' })
+
+sequelize.sync().then(() => {
+  // this is where we continue ...
+})
+```
+
+OK. So, first of all, let's load all tasks with their associated user.
+
+```
+Task.findAll({ include: [ User ] }).then(tasks => {
+  console.log(JSON.stringify(tasks))
+
+  /*
+    [{
+      "name": "A Task",
+      "id": 1,
+      "createdAt": "2013-03-20T20:31:40.000Z",
+      "updatedAt": "2013-03-20T20:31:40.000Z",
+      "userId": 1,
+      "user": {
+        "name": "John Doe",
+        "id": 1,
+        "createdAt": "2013-03-20T20:31:45.000Z",
+        "updatedAt": "2013-03-20T20:31:45.000Z"
+      }
+    }]
+  */
 })
 ```
 
