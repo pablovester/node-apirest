@@ -50,8 +50,6 @@ Sequelize is a promise-based ORM for Node.js and io.js. It supports the dialects
 
 #### Basic usage
 
-- [Basic usage](http://docs.sequelizejs.com/manual/installation/usage.html)
-
 To get the ball rollin' you first have to create an instance of Sequelize. Use it the following way:
 ```
 const sequelize = new Sequelize('database', 'username', 'password', {
@@ -106,6 +104,8 @@ See [Sequelize.query API](http://docs.sequelizejs.com/class/lib/sequelize.js~Seq
 See [Query Types](http://docs.sequelizejs.com/variable/index.html#static-variable-QueryTypes)
 
 Here is how it works:
+
+- [Migrations](http://docs.sequelizejs.com/manual/migrations.html)
 
 #### Model definition
 
