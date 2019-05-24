@@ -6,16 +6,17 @@ const Joi = require('@hapi/joi');
 const getProfiles = async (req, res) =>{
     try {
         const profiles = await models.Profiles.findAll();
-        if (profiles !== null) {
-            res.status(200).json({
-                message: 'List of profiles:',
-                data: { profiles }
-            });
-        }else{
+        if (profiles == null) {
             res.status(204).json({
                 message: 'No profiles found.',
                 data: {}
             })
+        }else{
+            res.status(200).json({
+                message: 'List of profiles:',
+                data: { profiles }
+            });
+            
         }
         
     } catch (err) {

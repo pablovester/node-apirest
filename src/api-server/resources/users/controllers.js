@@ -22,7 +22,7 @@ const getUsers = async (req, res) =>{
         res.status(500).json({
             message: 'An error ocurred',
             data: {},
-            error: ex
+            error: err
         })
     }
 };
@@ -108,7 +108,7 @@ const deleteUser = async (req, res) =>{
         res.status(500).json({
             message: 'An error ocurred',
             data: {},
-            error: ex
+            error: err
         })
     }
 };
