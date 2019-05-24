@@ -4,7 +4,6 @@ const models = require('../api-server/db/models')
 
 describe('Listing all users', () => {
 
-<<<<<<< HEAD
     let mockRequest = {
         body: {}
     };
@@ -48,26 +47,4 @@ describe('Listing all users', () => {
         done();
     })
 });
-=======
-    it('GET all users', async (done) => {
-        
-        models.User.findAll = await jest.fn().mockReturnValue(['1', '2', '3']);
-        let mockResponse = {
-            status: jest.fn(),
-            send: jest.fn(),
-            json: jest.fn()
-        };
-        mockResponse.status.mockReturnValue(mockResponse);
-        mockResponse.json.mockReturnValue(mockResponse);
-
-        let mockRequest = {
-            body: {}
-        };
-
-        const users = await usersController.getUsers(mockRequest, mockResponse);
-        expect(mockResponse.status).toHaveBeenCalledWith(200);
-        done();
-    });
-})
->>>>>>> 1eba7ca4359fe3b34b4a31fbbf24f3917873b0bc
 
